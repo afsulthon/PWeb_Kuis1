@@ -29,13 +29,16 @@ header {
 
 header h1 {
   font-size: 85px;
-  margin-top: 150px;
   font-weight: 500;
+}
+
+header h1 span {
+  color: #6565FF;
 }
 
 header p {
   font-size: 20px;
-  margin: 0.5rem 0;
+  padding: 0 10rem;
 }
 
 header a.cta {
@@ -45,12 +48,12 @@ header a.cta {
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 60px;
-  margin-top: 1rem;
+  margin-top: 5rem;
   transition: all 0.2s;
 }
 
 header a.cta:hover {
-  background-color: #333;
+  background-color: #6565FF;
   color: #fff;
   cursor: pointer;
 }
@@ -63,11 +66,7 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 20px 7%;
-}
-
-nav img {
-  height: 50px;
+  padding: 40px 7%;
 }
 
 nav ul {
@@ -84,6 +83,11 @@ nav a {
   font-size: 1.2rem;
 }
 
+nav a:hover {
+  color: #6565FF;
+  transition: all 0.2s;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +102,7 @@ section {
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -126,7 +130,7 @@ section textarea {
 }
 
 section button[type='submit'] {
-  background-color: #00137e;
+  background-color: #6565FF;
   color: #fff;
   padding: 1rem;
   border: none;
@@ -142,7 +146,7 @@ section button[type='submit']:hover {
 }
 
 footer {
-  background-color: #00137e;
+  background-color: #6565FF;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -182,10 +186,11 @@ footer a {
 #services {
   padding: 4rem 0;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 #services h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .service {
@@ -198,7 +203,6 @@ footer a {
 .service img {
   width: 200px;
   height: 200px;
-  margin-bottom: 1rem;
   border-radius: 50%;
 }
 
@@ -222,8 +226,7 @@ footer a {
 }
 
 #contact {
-  padding: 50px 7%;
-  line-height: 30px;
+  padding: 40px 7%;
 }
 
 #contact h2 {
