@@ -42,10 +42,10 @@ header p {
 }
 
 header a.cta {
+  padding: 1rem 2rem;
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
-  padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 60px;
   margin-top: 5rem;
@@ -53,6 +53,7 @@ header a.cta {
 }
 
 header a.cta:hover {
+  padding: 1rem 3rem;
   background-color: #6565FF;
   color: #fff;
   cursor: pointer;
@@ -126,7 +127,16 @@ section textarea {
   border-radius: 5px;
   border: none;
   outline: none;
-  background: #f2f2f2;
+  background: whitesmoke;
+}
+
+section input[type='text'],
+section input[type='email'] {
+  height: 50px;
+}
+
+section textarea {
+  height: 200px;
 }
 
 section button[type='submit'] {
@@ -143,6 +153,7 @@ section button[type='submit'] {
 section button[type='submit']:hover {
   background-color: #fff;
   color: #333;
+  border: 1px solid #333;
 }
 
 footer {
@@ -150,38 +161,15 @@ footer {
   color: #fff;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
 footer p {
   font-size: 1rem;
-  margin: 0;
 }
 
-footer a {
-  color: #fff;
-  margin-left: 1rem;
-  text-decoration: none;
-}
 
-@media only screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  main {
-    flex-direction: column;
-  }
-
-  section {
-    width: 100%;
-  }
-}
 
 #services {
   padding: 4rem 0;
@@ -210,19 +198,14 @@ footer a {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .service {
-    width: 100%;
-    margin: 2rem 0;
-  }
-}
 
 #about {
   padding: 50px 8%;
 }
 
 #about img {
-  margin-top: 50px;
+  margin-top: 40px;
+  border-radius: 50px;
 }
 
 #contact {
@@ -231,4 +214,27 @@ footer a {
 
 #contact h2 {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .service {
+    width: 100%;
+    margin: 2rem 0;
+  }
 }
